@@ -8,9 +8,11 @@ const Inicio = () => {
     <>
 
  <Navbar />
-<img src={hero} alt="imagen de portada" height="500px"/>
+<img src={hero} alt="imagen de portada" className='hero'/>
 
-  
+  <div>
+    
+  </div>
 
     </>
   )

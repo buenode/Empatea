@@ -1,14 +1,19 @@
 import React from 'react'
-import Navbar from '../componentes/Navbar'
+import Navbar from '../componentes/Navbar';
+
 
 const NuestraVision = () => {
   return (
-    <div>
+
+    <>
+
       <Navbar />
-      <h1>Quienes Somos</h1>
-      <button>  ir a inicio</button>
-     
-    </div>
+      <div>   
+        <h1>Nuestra Vision</h1>
+        <button>ir a inicio</button>
+      </div>
+
+    </>
   )
 }
 

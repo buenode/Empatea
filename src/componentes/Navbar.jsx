@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import logo from '../magenes/logo.jpg'
-import './Navbar.css'
+
 import menu from '../magenes/menu.png'
 
 import'./Navbar.css'
