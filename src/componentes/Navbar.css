@@ -5,24 +5,47 @@
     width: 100%;
     height: 100px;
     background: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
+}
+
+.logo{
+    height: 100px;    
+     
 }
 .link{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: yellow;
+    gap: 10px;
     height: 50px;
-   width: 700px;
+   width: 800px;
   margin-left: 200px;
+  animation-name: entrada;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes entrada {
+    from{
+       margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+        
+    }
+}
+
+
+
 .linke{
     display: flex;
     align-items: center;
-    color: red;
+    color: rgb(243, 21, 21);
    text-decoration: none;
    background: yellow;
    font-size: 20px;
-   
+   font-size: 25px;
 }
 .linke:hover{
     background: rgb(165, 175, 23);
@@ -30,6 +53,62 @@
    
 }
 .logotipo{
-   background: rgb(209, 32, 32);
+   background: yellow;
     display: none;
 }
+
+/* .logo{
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    display: inline-block;
+} */
+
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media ( max-width: 904px) {
+    .navb{
+        display: flex;
+     
+    }
+    .link{
+        display: none;
+        animation: none;
+    }
+    .logotipo{
+        display: block;
+        margin-right: 2px;
+        width: 50px;
+        height: 50px;
+        
+    }
+    .logo{
+        width: 150px;
+        margin-left: 90px;
+    }
+   .link{
+   
+    position: relative;
+    top: 100%;
+    left: 160px; 
+     width: 100%; 
+     height: 100px;
+    width: 250px;
+    line-height: 40px; 
+   
+   }
+   .link.isActive{
+    display: block;
+   }
+  
+   
+}
+
