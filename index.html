@@ -13,7 +13,41 @@
 </head>
 <body>
 
-    <header>
+  <div class="animate__animated animate__backInDown">     
+  <header class="main-header">
+    <nav class="nav-container">
+      <div class="logo">
+        <img src="https://scontent.fmvd3-1.fna.fbcdn.net/v/t39.30808-6/359795005_593392296244101_1366624618880895630_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=lNqhIXGteq0Q7kNvwG6AhWV&_nc_oc=AdnVM1-waD7kxZYCktJiMS89D5vkiBNxQSEoOMEc8GNfGbqNY9xdAupYYOOOQp1Mbvmt7glAgIveG93MjL0ZgJJ5&_nc_zt=23&_nc_ht=scontent.fmvd3-1.fna&_nc_gid=K5-2KG_Dbe0DUCMmIXfrkg&oh=00_AYGAJiVpNaHRk06cV7oxhoe8ckIKHz6ILZwgTGIiPs1Omw&oe=67F4BCF0" alt="Logo EMPATEA">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#ayudar">Cómo Ayudar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+</div>
+  
+  <!-- MENÚ FULLSCREEN -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#inicio" onclick="toggleMenu()">Inicio</a>
+    <a href="#nosotros" onclick="toggleMenu()">Nosotros</a>
+    <a href="#proyectos" onclick="toggleMenu()">Proyectos</a>
+    <a href="#ayudar" onclick="toggleMenu()">Cómo Ayudar</a>
+    <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+  </div>
+
+
+
+
+
+
+    <!-- <header>
         <nav>
             <div class="logo">
                 <img src="https://scontent.fmvd3-1.fna.fbcdn.net/v/t39.30808-6/359795005_593392296244101_1366624618880895630_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=lNqhIXGteq0Q7kNvwG6AhWV&_nc_oc=AdnVM1-waD7kxZYCktJiMS89D5vkiBNxQSEoOMEc8GNfGbqNY9xdAupYYOOOQp1Mbvmt7glAgIveG93MjL0ZgJJ5&_nc_zt=23&_nc_ht=scontent.fmvd3-1.fna&_nc_gid=K5-2KG_Dbe0DUCMmIXfrkg&oh=00_AYGAJiVpNaHRk06cV7oxhoe8ckIKHz6ILZwgTGIiPs1Omw&oe=67F4BCF0" alt="Logo EMPATEA">
@@ -26,7 +60,7 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
     
 
     <section class="hero" id="inicio">

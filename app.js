@@ -1,4 +1,14 @@
 
+
+
+function toggleMenu() {
+  const menu = document.getElementById('fullscreenMenu');
+  menu.classList.toggle('active');
+}
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
