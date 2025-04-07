@@ -1,9 +1,10 @@
 
 
 
+// Función para alternar el menú móvil
 function toggleMenu() {
-  const menu = document.getElementById('fullscreenMenu');
-  menu.classList.toggle('active');
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileMenu.classList.toggle('active');
 }
 
 
