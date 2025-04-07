@@ -692,7 +692,30 @@ body {
 .ayuda-cards {
   display: flex;
   justify-content: space-around;
+
+  /* flex-wrap: wrap; */
 }
+
+@media (max-width: 768px) {
+  #ayudar {
+    padding: 30px 20px;
+  }
+
+  .ayuda-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ayuda-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+
+
+
 
 .ayuda-card {
   width: 30%;
